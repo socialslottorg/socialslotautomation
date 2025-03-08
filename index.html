@@ -3,15 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Redirect Page</title>
+    <title>Open in External Browser</title>
     <script>
         window.onload = function() {
-            // Redirects to your desired URL
-            window.location.href = "https://socialslot.co.uk/";
+            // Open in external browser if possible by redirecting
+            setTimeout(function() {
+                window.location.href = "https://bit.ly/3XyrPD6";  // Replace with your external link
+            }, 1000);  // Delay to let users see the message before the redirect
         };
     </script>
 </head>
 <body>
-    <p>Redirecting...</p>
+    <p>If this page doesn't open in an external browser, please tap on the link below:</p>
+    <p><a href="https://your-link-here.com" target="_blank">Go to external website</a></p>  <!-- Direct link for users to manually open -->
 </body>
 </html>
